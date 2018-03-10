@@ -1,0 +1,40 @@
+.chat-container {
+    padding: 15px;
+    display: flex;
+    .message-tab {
+        width: 25%;
+        margin: 0 5px;
+        height: 100px;
+        background: white;
+        .heading {
+            font-size: 25px;
+            padding: 10px;
+        }
+        .search-bar-container {
+            text-align: center;
+            color: #bbbbbb;
+            .fa-search {
+                position: absolute;
+                line-height: 32px;
+                font-size: 20px;
+                padding: 3px 8px
+            }
+            .search-bar {
+                height: 32px;
+                padding-left: 30px;
+            }
+        }
+    }
+    .conversation-tab {
+        width: 50%;
+        margin: 0 5px;
+        height: 100px;
+        background: white;
+    }
+    .task-tab {
+        width: 25%;
+        height: 100px;
+        margin: 0 5px;
+        background: white;
+    }
+}

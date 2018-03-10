@@ -19,6 +19,7 @@ body,
         border-radius: 43px;
     }
     .notification-circle {
+        position: absolute;
         height: 10px;
         width: 10px;
         background-color: #ff5050;
@@ -27,7 +28,6 @@ body,
         right: 15px;
         top: 12px;
         border-radius: 61px;
-        position: absolute;
         margin: 2px;
     }
 }
@@ -42,51 +42,56 @@ body,
         .logo {
             width: 250px;
             display: inline-block;
-            box-shadow: -20px 0px 40px 10px #cccccc;
+            box-shadow: -20px 20px 40px 10px #cccccc;
             text-align: center;
         }
-        .profile-avatar {
+        .user-options {
+            display: inline-flex;
             position: absolute;
-            z-index: 36;
-            top: 0;
-            width: 28px;
-            height: 28px;
-            right: 85px;
-            margin: 12px;
-            border-radius: 31px;
-        }
-        .chat-notification {
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            right: 180px;
-            @include notificationStyle();
-        }
-        .simple-notification {
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            right: 130px;
-            @include notificationStyle();
-        }
-        .left-toggle {
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            top: 0;
             right: 0;
-            padding: 16px 19px;
-            text-align: center;
-            border-left: 1px solid #ccc;
-            .line {
-                display: block;
-                width: 15px;
-                height: 2px;
-                border-radius: 1px;
-                background-color: #ccc;
-                z-index: 19;
-                position: relative;
-                margin: 3px 0;
+            .profile-avatar {
+                position: absolute;
+                z-index: 36;
+                top: 0;
+                width: 28px;
+                height: 28px;
+                right: 58px;
+                margin: 12px;
+                border-radius: 31px;
+            }
+            .chat-notification {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 150px;
+                @include notificationStyle();
+            }
+            .simple-notification {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 100px;
+                @include notificationStyle();
+            }
+            .left-toggle {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                top: 0;
+                right: 0;
+                padding: 16px 19px;
+                text-align: center;
+                border-left: 1px solid #ccc;
+                .line {
+                    display: block;
+                    width: 15px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: #ccc;
+                    z-index: 19;
+                    position: relative;
+                    margin: 3px 0;
+                }
             }
         }
     }
@@ -116,6 +121,10 @@ body,
                 padding: 30px 0px;
                 color: #b9b9b9;
                 text-align: left;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
                 .option {
                     padding: 10px 20px;
                     &:hover {
@@ -127,6 +136,11 @@ body,
                     color: #4C84FF;
                     border-left: 5px solid;
                     padding: 10px 15px;
+                    margin-right: 90px;
+                }
+                hr {
+                    margin: 20px 20px 31px 20px;
+                    border: 0.5px solid #bbbbbb;
                 }
             }
         }

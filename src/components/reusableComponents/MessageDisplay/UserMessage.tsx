@@ -18,7 +18,7 @@ export class UserMessage extends React.Component<IUserMessageProps, {}> {
                     <div>
                         <div>
                             <span className="time">2 min ago</span>
-                            <span className="user-name">{this.props.currentUserName}</span>
+                            <span className="user-name">{'Me'}</span>
                         </div>
                         <div className="message-container">
                             <div className="caret-up" ></div>

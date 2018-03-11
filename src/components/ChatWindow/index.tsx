@@ -71,7 +71,7 @@ export class ChatWindowImpl extends React.Component<IChatWindowProps, IChatWindo
     }
 
     handleChatChange = (index, name, avatarURL) => {
-        this.setState({ isActive: index, name, avatarURL });
+        this.setState({ isActive: index, name, avatarURL, newMessage: [] });
     }
 
     handleSearchInput = (e) => {
@@ -191,11 +191,6 @@ export class ChatWindowImpl extends React.Component<IChatWindowProps, IChatWindo
                                     I think we will start very soon?`}
                                     userAvatarURL={'https://harish9312.github.io/static/media/myImg.21393c7c.jpg'}
                                     currentUserName={'Harish'}
-                                />
-                                <GuestMessage
-                                    message={messageData[this.state.isActive].messageContent}
-                                    guestAvatarURL={this.state.avatarURL}
-                                    guestName={this.state.name}
                                 />
                                 {this.state.newMessage.map((message, index) => {
                                     return <UserMessage

@@ -15,7 +15,7 @@ export class BasePage extends React.Component<IBasePageProps, {}> {
     static defaultProps: IBasePageProps;
 
     getClassName = (route: string) => {
-        const currentPath = location.href.split('/')
+        const currentPath = location.href.split('/');
         if (currentPath[currentPath.length - 1] === route) {
             return true;
         }
@@ -26,7 +26,7 @@ export class BasePage extends React.Component<IBasePageProps, {}> {
         const { getClassName } = this;
         return <div className="basepage" >
             <NavBar />
-            <div style={{ height: '100%', display: 'flex' }} className="content">
+            <div style={{ height: 'calc(100% - 50px)', display: 'flex' }} className="content">
                 <LeftSideBar getClassName={getClassName} />
                 <div style={{ display: 'inline-block', width: 'calc(100% - 250px)' }} >
                     {this.props.children}
@@ -91,8 +91,8 @@ const LeftSideBar = ({ getClassName }) => {
             </div>
 
         </div>
-    </div>
-}
+    </div>;
+};
 
 const NavBar = () => {
     return <div className="header" >
@@ -109,7 +109,9 @@ const NavBar = () => {
                     <i className="fa fa-comments notification" />
                 </div>
                 <div>
-                    <img src={myImg} className="profile-avatar" />
+                    <Link to="/user-profile" >
+                        <img src={myImg} className="profile-avatar" />
+                    </Link>
                 </div>
                 <div className="left-toggle" >
                     <span className="line" ></span>
@@ -118,6 +120,6 @@ const NavBar = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div>;
 
-}
+};

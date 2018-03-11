@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { BasePage } from '../reusableComponents/BasePage/index';
-import './draftsWindow.scss'
+import './draftsWindow.scss';
 
 export interface IDraftsWindowProps {
 }
@@ -19,7 +19,7 @@ export class DraftsWindowImpl extends React.Component<IDraftsWindowProps, {}> {
                     <h1>Drafts Window</h1>
                 </div>
             </BasePage>
-        )
+        );
     }
 }
 
@@ -28,4 +28,5 @@ export function mapStateToProps() {
     };
 }
 
-export const DraftsWindow = connect<{}, {}, IDraftsWindowProps>(mapStateToProps, null, null, { pure: false })(DraftsWindowImpl)
+export const DraftsWindow = connect<{}, {},
+    IDraftsWindowProps>(mapStateToProps, null, null, { pure: false })(DraftsWindowImpl);

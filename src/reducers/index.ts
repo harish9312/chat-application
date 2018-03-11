@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { demoReducer } from './demoReducer';
 import { combineForms } from 'react-redux-form';
+import { chatReducer } from './chatReducer';
 
 let forms = combineForms({
     demoForm: {
@@ -10,6 +11,7 @@ let forms = combineForms({
 
 let reducer = combineReducers({
     demo: demoReducer,
+    chat: chatReducer,
     forms
 });
 

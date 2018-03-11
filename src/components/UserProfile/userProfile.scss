@@ -1,0 +1,112 @@
+    .user-profile {
+        padding: 20px;
+        .title {
+            padding-bottom: 20px;
+            font-size: 25px;
+        }
+        .profile-information {
+            box-shadow: -8px 11px 17px -7px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            background: white;
+            .profile-heading {
+                font-size: 20px;
+                color: gray;
+                border-bottom: 1px solid gainsboro;
+                padding-bottom: 20px;
+            }
+            .display-information {
+                padding: 50px;
+                position: relative;
+                img {
+                    height: 100px;
+                    width: 100px;
+                    box-shadow: 0 10px 20px rgba(206, 206, 206, 0.19), 0 6px 6px rgba(202, 202, 202, 0.23);
+                    border-radius: 50px;
+                }
+                .user-information {
+                    margin: 20px;
+                    .label {
+                        color: gray;
+                        font-size: 13px;
+                    }
+                }
+                .edit-button {
+                    width: 40px;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    height: 40px;
+                    text-align: center;
+                    background-color: #60d660;
+                    color: white;
+                    border-radius: 31px;
+                    .fa {
+                        line-height: 40px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .edit-information {
+        padding: 50px;
+        img {
+            height: 100px;
+            width: 100px;
+            box-shadow: 0 10px 20px rgba(206, 206, 206, 0.19), 0 6px 6px rgba(202, 202, 202, 0.23);
+            border-radius: 50px;
+        }
+        .info {
+            margin-left: 50px;
+            .first-container {
+                padding: 10px 0px;
+                .label {
+                    font-size: 12px;
+                    color: grey;
+                }
+                .edit-input {
+                    height: 20px;
+                    margin-top: 10px;
+                    border: 1px solid;
+                    padding: 5px 5px 5px 15px;
+                    border-color: #d0d0d0;
+                    border-radius: 2px;
+                }
+                .change-email-button {
+                    color: #008ae7;
+                    font-size: 12px;
+                    padding-left: 10px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                input[type="text"]:disabled {
+                    background-color: #e5f4ff;
+                }
+            }
+            .change-password {
+                .edit-input {
+                    -webkit-text-security: star;
+                }
+                .change-password-label {
+                    display: block;
+                    padding: 20px 0;
+                    font-size: 15px;
+                }
+            }
+        }
+        .save-button {
+            border: none;
+            color: white;
+            padding: 8px 30px;
+            font-size: 15px;
+            background-color: #00b4f7;
+            border-radius: 3px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }

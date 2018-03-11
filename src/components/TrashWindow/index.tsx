@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { BasePage } from '../reusableComponents/BasePage/index';
-import './trashWindow.scss'
+import './trashWindow.scss';
 
 export interface ITrashWindowProps {
 }
@@ -19,7 +19,7 @@ export class TrashWindowImpl extends React.Component<ITrashWindowProps, {}> {
                     <h1>Trash Window</h1>
                 </div>
             </BasePage>
-        )
+        );
     }
 }
 
@@ -28,4 +28,5 @@ export function mapStateToProps() {
     };
 }
 
-export const TrashWindow = connect<{}, {}, ITrashWindowProps>(mapStateToProps, null, null, { pure: false })(TrashWindowImpl)
+export const TrashWindow = connect<{}, {},
+    ITrashWindowProps>(mapStateToProps, null, null, { pure: false })(TrashWindowImpl);

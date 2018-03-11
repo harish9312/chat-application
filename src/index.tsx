@@ -13,6 +13,7 @@ import { SentWindow } from './components/SentWindow/index';
 import { TrashWindow } from './components/TrashWindow/index';
 import './commons.scss';
 import { TaskWindow } from './components/TaskWindow/index';
+import { UserProfile } from './components/UserProfile/index';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={BasePage} ></Route>
         <Route exact path="/inbox" component={InboxWindow} ></Route>
+        <Route exact path="/user-profile" component={UserProfile} ></Route>
         <Route exact path="/chat" component={ChatWindow} ></Route>
         <Route exact path="/drafts" component={DraftsWindow} ></Route>
         <Route exact path="/sent" component={SentWindow} ></Route>

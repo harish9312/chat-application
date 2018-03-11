@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { BasePage } from '../reusableComponents/BasePage/index';
-import './inboxWindow.scss'
+import './inboxWindow.scss';
 
 export interface IInboxWindowProps {
 }
@@ -19,7 +19,7 @@ export class InboxWindowImpl extends React.Component<IInboxWindowProps, {}> {
                     <h1>Inbox Window</h1>
                 </div>
             </BasePage>
-        )
+        );
     }
 }
 
@@ -28,4 +28,5 @@ export function mapStateToProps() {
     };
 }
 
-export const InboxWindow = connect<{}, {}, IInboxWindowProps>(mapStateToProps, null, null, { pure: false })(InboxWindowImpl)
+export const InboxWindow = connect<{}, {},
+    IInboxWindowProps>(mapStateToProps, null, null, { pure: false })(InboxWindowImpl);

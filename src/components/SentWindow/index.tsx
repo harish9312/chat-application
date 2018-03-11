@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { BasePage } from '../reusableComponents/BasePage/index';
-import './sentWindow.scss'
+import './sentWindow.scss';
 
 export interface ISentWindowProps {
 }
@@ -19,7 +19,7 @@ export class SentWindowImpl extends React.Component<ISentWindowProps, {}> {
                     <h1>Sent Window</h1>
                 </div>
             </BasePage>
-        )
+        );
     }
 }
 
@@ -28,4 +28,5 @@ export function mapStateToProps() {
     };
 }
 
-export const SentWindow = connect<{}, {}, ISentWindowProps>(mapStateToProps, null, null, { pure: false })(SentWindowImpl)
+export const SentWindow = connect<{}, {},
+    ISentWindowProps>(mapStateToProps, null, null, { pure: false })(SentWindowImpl);

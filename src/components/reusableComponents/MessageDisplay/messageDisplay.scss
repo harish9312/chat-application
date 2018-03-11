@@ -1,0 +1,99 @@
+.guest-message {
+    padding: 28px 0;
+    .main-container {
+        display: flex;
+        .guest-avatar {
+            display: inline-block;
+            .guest-image {
+                width: 30px;
+                height: 30px;
+                border-radius: 53px;
+            }
+        }
+        .guest-name {
+            padding: 10px;
+            font-size: 15px;
+            color: #565656;
+        }
+        .time {
+            font-size: 10px;
+            color: grey;
+        }
+        .message-container {
+            box-shadow: -5px 7px 8px -4px rgba(0, 0, 0, 0.18);
+            display: inline-block;
+            width: 75%;
+            margin-left: 10px;
+            margin-right: 75px;
+            border-bottom-left-radius: 5px;
+            .text {
+                color: gray;
+                font-size: 13px;
+                padding: 16px;
+                background-color: white;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .caret-up {
+                width: 0px;
+                height: 0;
+                border-right: 15px solid transparent;
+                border-bottom: 12px solid white;
+            }
+        }
+    }
+}
+
+.user-message {
+    padding: 28px 0;
+    .main-container {
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+        .user-avatar {
+            display: inline-block;
+            .user-image {
+                width: 30px;
+                height: 30px;
+                border-radius: 53px;
+            }
+        }
+        .user-name {
+            padding: 10px;
+            font-size: 15px;
+            color: #565656;
+        }
+        .time {
+            font-size: 10px;
+            color: grey;
+        }
+        .message-container {
+            box-shadow: 5px 7px 8px -4px rgba(0, 0, 0, 0.18);
+            display: inline-block;
+            width: 75%;
+            position: relative;
+            margin-top: 17px;
+            margin-right: 10px;
+            border-bottom-right-radius: 5px;
+            .text {
+                color: white;
+                font-size: 13px;
+                padding: 16px;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background-color: #2ba2fb;
+            }
+            .caret-up {
+                width: 0px;
+                height: 0;
+                position: absolute;
+                right: 0;
+                top: -12px;
+                border-left: 15px solid transparent;
+                border-bottom: 12px solid #2ba2fb;
+            }
+        }
+    }
+}

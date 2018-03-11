@@ -83,6 +83,8 @@ export class ChatWindowImpl extends React.Component<IChatWindowProps, IChatWindo
         messageData.forEach((data, index) => {
             if (data.messageContent.toLocaleLowerCase().indexOf(value.toLowerCase()) > -1) {
                 messageArrays.push(messageData[index]);
+            } else if (data.name.toLocaleLowerCase().indexOf(value.toLowerCase()) > -1) {
+                messageArrays.push(messageData[index]);
             }
         });
         this.setState({
